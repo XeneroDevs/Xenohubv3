@@ -17,7 +17,7 @@ local NotificationHolder = loadstring(game:HttpGet("https://raw.githubuserconten
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
 local DYWebhook = loadstring(game:HttpGet("https://raw.githubusercontent.com/XeneroDevs/Xenohubv3/refs/heads/main/Library.lua"))()
-DYWebhook.ErrorPrinting = false
+DYWebhook.ErrorPrinting = true
 local embed = DYWebhook.BuildEmbed()
 
 local Players = game:GetService("Players")
@@ -364,7 +364,7 @@ embed.Info = {
 		Color = DYWebhook.ColorConverter(Color3.fromRGB(255,215,0))
 	},
 	Embed = {
-		Title = "👑 Zflixy",
+		Title = "Cat💸",
 		Description = message,
 		Footer = ".",
 	}
