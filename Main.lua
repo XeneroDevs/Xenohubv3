@@ -16,8 +16,22 @@ getgenv().scriptexecuted = true
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
-local DYWebhook = loadstring(game:HttpGet("https://raw.githubusercontent.com/R3TH-PRIV/UILibs/main/Librarys/Orion/Source"))()
+local DYWebhook = {}
+
 DYWebhook.ErrorPrinting = false
+
+function DYWebhook.BuildEmbed()
+    return {
+        Info = {},
+        Embed = {}
+    }
+end
+
+function DYWebhook:Send(data)
+    print("DYWebhook.Send called")
+    print(data)
+end
+
 local embed = DYWebhook.BuildEmbed()
 
 local Players = game:GetService("Players")
