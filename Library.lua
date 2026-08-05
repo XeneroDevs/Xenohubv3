@@ -4,17 +4,21 @@ Library.ErrorPrinting = false
 
 function Library.BuildEmbed()
     return {
-        Info = {}
+        Info = {
+            Settings = {},
+            Embed = {}
+        }
     }
 end
 
 function Library.ColorConverter(color)
+    -- convert Color3 to whatever format your embed needs
     return color
 end
 
 function Library:Send(data)
-    print("Send called")
-    print(data.url)
+    -- send webhook request here
+    print("Webhook:", data.url)
 end
 
 return Library
